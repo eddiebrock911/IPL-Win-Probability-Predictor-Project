@@ -69,7 +69,7 @@ teams = [
 
 cities = [
     'Mumbai', 'Kolkata', 'Delhi', 'Bangalore', 'Chennai',
-    'Hyderabad', 'Jaipur', 'Ahmedabad', 'Dubai', 'Pune'
+    'Hyderabad', 'Jaipur', 'Ahmedabad', 'Pune'
 ]
 
 col1, col2, col3 = st.columns(3)
