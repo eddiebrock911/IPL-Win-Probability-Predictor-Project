@@ -1,32 +1,108 @@
-# IPL Win Probability Predictor 🏏
+# 🏏 IPL Win Probability Predictor
 
-Ye ek **Streamlit app** hai jo IPL match ke liye **winning probability** predict karta hai based on current match data.
-
----
-
-## 🔹 Features
-- Batting aur bowling team ke basis par probability calculate kare.
-- Real-time input fields for match data.
-- User-friendly interface with emojis 😊.
+यह एक **Streamlit आधारित Machine Learning वेब ऐप** है जो लाइव मैच डेटा के आधार पर यह अनुमान लगाता है कि **Batting Team जीत सकती है या नहीं**। यह ऐप प्रशिक्षित ML मॉडल (`model.pkl`) का उपयोग करता है।
 
 ---
 
-## 🔹 Tech Stack
-- **Python 3.12**
-- **Streamlit** for frontend
-- **Pandas** for data manipulation
-- **NumPy** for numerical operations
-- **Scikit-learn** for ML model
-- **XGBoost** for boosting algorithm
+## 🚀 Features
+
+* ✅ Batting vs Bowling team चयन
+* ✅ Match city आधारित prediction
+* ✅ Target, runs left, balls left, wickets आधारित अनुमान
+* ✅ CRR और RRR का उपयोग
+* ✅ Real‑time Win Probability (%)
+* ✅ Attractive UI with custom CSS
 
 ---
-## Live Demo 
- https://iplwinprokit.onrender.com/
 
+## 🗂 Project Structure
 
-## 🔹 Installation & Setup (Local)
+```
+project-folder/
+│
+├── app.py          # Streamlit main application
+├── model.pkl       # Trained machine learning model
+├── README.md       # Project documentation
+```
 
-1. Clone the repository:
+---
+
+## ⚙️ Requirements
+
+Python 3.8+ और नीचे दिए गए packages:
+
 ```bash
-git clone https://github.com/eddiebrock911/IPL-Win-Probability-Predictor-Project
-cd ipl-win-predictor
+pip install streamlit scikit-learn pandas numpy
+```
+
+---
+
+## ▶️ How to Run
+
+```bash
+streamlit run app.py
+```
+
+Browser में automatically app open हो जाएगा।
+
+---
+
+## 🧠 How Prediction Works
+
+Model निम्न features पर trained है:
+
+* Batting Team
+* Bowling Team
+* Match City
+* Total Target Runs
+* Runs Left
+* Balls Left
+* Wickets Left
+* Current Run Rate (CRR)
+* Required Run Rate (RRR)
+
+Model `predict_proba()` का उपयोग करके जीत की probability निकालता है।
+
+---
+
+## ❗ Common Errors
+
+### model.pkl not found
+
+```text
+FileNotFoundError: model.pkl
+```
+
+✔ Solution: `model.pkl` को `app.py` वाली directory में रखें।
+
+### Prediction error
+
+✔ Check करें कि सभी numeric inputs सही format में हों।
+
+---
+
+## 🚀 Future Improvements
+
+* Team logos add करना
+* Live match API integration
+* Toss factor जोड़ना
+* Over by over prediction
+* Mobile UI optimization
+
+---
+
+## 📜 License
+
+यह प्रोजेक्ट educational और portfolio use के लिए बनाया गया है। आप इसे freely modify कर सकते हैं।
+
+---
+
+## 👨‍💻 Developer
+
+**Ankit Kumar**  [Instagram](https://www.instagram.com/__ankit._.op_/)
+
+Python | Machine Learning | Streamlit
+
+---
+
+✅ यह README.md GitHub repository के लिए ready है। Direct paste करके use करें।
