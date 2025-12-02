@@ -104,5 +104,3 @@ FileNotFoundError: model.pkl
 Python | Machine Learning | Streamlit
 
 ---
-
-✅ यह README.md GitHub repository के लिए ready है। Direct paste करके use करें।
